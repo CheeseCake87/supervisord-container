@@ -1,6 +1,7 @@
 FROM python:3.11-alpine
 WORKDIR /pysupervisor
 RUN apk update && apk upgrade
+# TIMEZONE
 RUN apk add --no-cache tzdata
 ENV TZ=Europe/London
 # See here for timezones:
