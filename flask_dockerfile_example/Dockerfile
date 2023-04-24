@@ -1,4 +1,4 @@
-FROM cheesecake87/pysupervisor
+FROM cheesecake87/pysupervisor:latest
 WORKDIR /flask
 RUN apk update && apk upgrade
 RUN apk add --no-cache tzdata
