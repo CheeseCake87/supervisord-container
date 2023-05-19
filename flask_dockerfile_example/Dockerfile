@@ -13,3 +13,4 @@ COPY requirements.txt requirements.txt
 COPY supervisor.apps.ini /pysupervisor/supervisor.apps.ini
 RUN python3 -m venv venv
 RUN venv/bin/pip install -r requirements.txt
+# No need for any command here, supervisor will run your app from supervisor.apps.ini
